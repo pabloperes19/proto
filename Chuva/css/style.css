@@ -1,0 +1,1163 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet');
+
+.all-page {
+  padding: 0px;
+  background: #ffffff;
+  display: inline-flex;
+  padding-bottom: 50px;
+}
+
+aside {
+  position: fixed;
+  width: 220px;
+  height: 100vh;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.bi-list {
+  font-size: 40px;
+  padding-left: 8px;
+  padding-right: 8px;
+  cursor: pointer;
+}
+
+/* Menu */
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  height: 536px;
+}
+
+.event-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+.content {
+  background: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%);
+  padding-top: 15px;
+  padding-bottom: 5px;
+  width: 220px;
+  height: 68px;
+}
+
+.menu-logo {
+  width: 220px;
+  height: 258px;
+  margin-top: 540px;
+  margin: 0px 0px;
+  background-image: url("C:/Users/pc/Desktop/Pasta IMG/dewey-4.png");
+}
+
+#apresentaition-menu,
+#committee-menu,
+#author-menu,
+#themes-menu,
+#works-menu,
+#contact-menu {
+  border-bottom: 1px solid #908e8e;
+  width: 220px;
+  height: 33px;
+}
+
+.navbar-nav a {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  color: #725c5c;
+  text-decoration: none;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  padding-left: 20px;
+  width: 220px;
+}
+
+.navbar-nav a:hover {
+  background: #fdf1eb;
+}
+.navbar-nav a:active,
+#works-menu {
+  background: #fdf1eb;
+  border-left: 5px solid #ed7839;
+}
+
+.container-content {
+  display: block;
+  width: 1299px;
+  height: 100%;
+  margin-left: 220px;
+}
+
+/* Menu para telas menores */
+#small-screen-menu {
+  display: none;
+  background: hsl(21, 81%, 96%);
+  height: 68px;
+  z-index: 1;
+}
+
+#small-screen-menu input[type="checkbox"] {
+  display: none;
+}
+
+#small-screen-menu .navbar {
+  padding-top: 0px;
+}
+
+#small-screen-menu nav {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  left: -230px;
+  background-color: #ffffff;
+  width: 220px;
+}
+
+#small-screen-menu nav .navbar-nav {
+  height: 200vh;
+}
+
+#small-screen-menu input[type="checkbox"]:checked ~ nav {
+  transform: translateX(230px);
+}
+.small-screen-menu-logo {
+  width: 220px;
+  height: 258px;
+  background-image: url("C:/Users/pc/Desktop/Pasta IMG/dewey-4.png");
+}
+
+/* Media query  */
+@media screen and (max-width: 768px) {
+  #small-screen-menu {
+    display: inline;
+  }
+  aside {
+    display: none;
+  }
+  #small-screen-menu {
+    width: 48px;
+    height: 70px;
+  }
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 68px;
+  background: #fdf1eb;
+  display: inline-flex;
+  padding-left: 0px;
+}
+
+#initial-text {
+  width: 80%;
+  display: block;
+  padding-left: 45px;
+}
+
+#theme-text {
+  position: relative;
+  top: -2px;
+  width: 100%;
+  height: 16px;
+  padding-top: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #725c5c;
+}
+
+#title {
+  position: relative;
+  max-width: 1200px;
+  height: 26px;
+  bottom: 12px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #725c5c;
+}
+
+#post-id {
+  position: relative;
+  width: 100%;
+  height: 16px;
+  top: -20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #725c5c;
+}
+#btn-div {
+  width: 30%;
+  display: inline-flex;
+}
+
+#language-button {
+  min-width: 100px;
+  height: 34px;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 3px;
+  margin: 17px;
+  text-align: center;
+}
+
+#linguage {
+  border: none;
+  background-color: #fdf1eb;
+  font-size: 12px;
+}
+
+#login {
+  display: flex;
+  margin-top: 6px;
+  padding: 10px;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+.login-texts {
+  width: 100%;
+}
+
+#greetings {
+  height: 18px;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: #333333;
+}
+
+#email {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  color: #333333;
+  text-align: right;
+  width: 100%;
+}
+
+.login-images {
+  position: relative;
+  margin: 3px;
+  width: 30px;
+  height: 30px;
+  margin-right: 45px;
+}
+
+#profile-image {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #f5f5f5;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-image: url("C:/Users/pc/Desktop/Pasta IMG/women-image.png");
+}
+
+#notification-image {
+  position: absolute;
+  background: #f85959;
+  border-radius: 10px;
+  right: -12px;
+  height: 12px;
+  width: 12px;
+  z-index: 1;
+}
+
+#notification-number {
+  width: 12px;
+  height: 12px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  padding-left: 3px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+/* Início página */
+.page-content {
+  display: block;
+  padding-right: 45px;
+  padding-left: 45px;
+}
+
+#content-title {
+  display: inline-flex;
+  width: 100%;
+  padding-top: 25px;
+}
+
+.work-title {
+  width: 80%;
+}
+
+.work-title h2 {
+  height: 54px;
+  width: 90%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #ed7839;
+}
+
+#work-interaction {
+  width: 30%;
+  text-align: right;
+}
+
+#interation-btn img {
+  padding-left: 15px;
+  height: 2.1rem;
+  cursor: pointer;
+}
+#comment-work p {
+  margin-top: 8px;
+  height: 25px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  word-spacing: 2px;
+  color: #ed7839;
+}
+
+/* Vídeo */
+
+.video-content {
+  position: relative;
+}
+.container-video {
+  position: relative;
+  width: 783px;
+  height: 439px;
+  background-image: url("C:/Users/pc/Desktop/Pasta IMG/dewey-1.png");
+}
+
+.container-video img {
+  position: absolute;
+  width: 783px;
+  height: 439px;
+  left: 0px;
+  top: 0px;
+  background: rgba(141, 53, 6, 0);
+  border-radius: 3px;
+}
+
+.detail-title {
+  background: #fdf1eb;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.detail-title p {
+  width: 212px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  align-items: center;
+  color: #4e4e4e;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.container-video h3 {
+  position: absolute;
+  width: 734px;
+  height: 54px;
+  left: 32px;
+  top: 35px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.master-round {
+  position: absolute;
+  width: 84px;
+  height: 86px;
+  left: 31px;
+  bottom: 52px;
+  background-image: url("C:/Users/pc/Desktop/Pasta IMG/master-end-round.png");
+}
+
+#author {
+  position: absolute;
+  height: 36px;
+  left: 134px;
+  bottom: 78px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+#author-detail {
+  position: absolute;
+  height: 27px;
+  left: 136px;
+  bottom: 55px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+/* Detalhe vídeo */
+.video-detail {
+  position: absolute;
+  width: 325px;
+  height: 439px;
+  right: 0px;
+  top: 0px;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.video-detail-content {
+  display: flex;
+  position: relative;
+}
+
+.detail-text p {
+  width: 255px;
+  height: 330px;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 135%;
+  letter-spacing: 0.02em;
+  color: #5c5c5c;
+  margin: 30px;
+}
+
+.detail-text span {
+  font-weight: 500;
+  font-size: 12px;
+  color: #827c7c;
+}
+
+.detail-scroll {
+  position: relative;
+  width: 4px;
+  height: 330px;
+  right: 7px;
+  top: 30px;
+}
+
+.up-scroll {
+  position: absolute;
+  width: 4px;
+  height: 160px;
+  left: 0px;
+  top: 0px;
+  background: #bfbfbf;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.down-scroll {
+  position: absolute;
+  width: 4px;
+  height: 330px;
+  left: 0px;
+  top: 0px;
+  background: #e7e7e7;
+  border-radius: 5px;
+}
+
+/* Sessão resumo */
+
+.container-abstract {
+  width: 100%;
+  max-height: 533px;
+  margin-top: 30px;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.abstract-head {
+  width: 100%;
+  height: 47px;
+  background: #fdf1eb;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.abstract-head p {
+  width: 100%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  color: #4e4e4e;
+  padding: 10px 15px;
+}
+
+.abstract-content {
+  width: 100%;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #5c5c5c;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 0px 0px;
+  padding: 15px;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  cursor: pointer;
+}
+
+.abstract-content p {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #5c5c5c;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+
+#showText {
+  display: none;
+}
+
+.abstract-content strong {
+  color: #ed7839;
+  font-size: larger;
+}
+
+/* Sessão discussões */
+
+.speech-container {
+  width: 100%;
+  max-height: 1500px;
+  margin-top: 30px;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.all-content-abstract {
+  padding: 0px 16px 0px 20px;
+}
+
+.header-speech {
+  width: 100.15%;
+  height: 47px;
+  background: #fdf1eb;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  border-radius: 3px 3px 0px 0px;
+  margin-top: -1px;
+  margin-left: -1px;
+}
+
+.header-speech p {
+  width: 100%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #4e4e4e;
+  padding: 10px 15px;
+}
+
+/* Início compartilhamento  */
+
+#sharing-session {
+  display: block;
+}
+
+#sharing-session p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ed7839;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.sharing-icons {
+  display: flex;
+  margin-top: 27px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#sharing-icon-2 {
+  padding-left: 51.74px;
+  padding-right: 51.74px;
+}
+#sharing-session .ask-author p {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #595959;
+  width: 626px;
+  height: 39px;
+  margin: auto;
+  margin-top: 35.06px;
+}
+.btn-box {
+  display: flex;
+  margin-top: 14px;
+  justify-content: center;
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 28px;
+}
+
+.btn-box button {
+  width: 133px;
+  height: 32px;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+  color: #ffffff;
+  background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  border: none;
+  margin-bottom: -16px;
+}
+
+/*  Formulário */
+
+#form-message {
+  margin: 15px;
+  display: none;
+}
+
+#form-message p {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #5c5c5c;
+  padding-top: 0px;
+}
+
+#form-message label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ed7839;
+  width: 100%;
+}
+
+#form-message input {
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 100%;
+}
+
+#message-subject {
+  height: 39px;
+  padding-left: 23.13px;
+  padding-top: auto;
+  padding-bottom: auto;
+  margin-bottom: 10px;
+}
+
+#message-subject::placeholder {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #4d4d4d;
+}
+
+#message-content {
+  height: 82px;
+  border-radius: 4px 4px 0px 0px;
+  margin-bottom: -1px;
+  border: 1px solid #cccccc;
+}
+
+.icon-btn-form {
+  position: relative;
+  width: 100%;
+  height: 31px;
+  background: #eaf1f2;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  border-radius: 0px 0px 4px 4px;
+  display: flexbox;
+}
+
+.icon-form {
+  position: absolute;
+  display: flex;
+  left: 29.3px;
+  top: 10px;
+}
+
+#shape-1 {
+  background-image: url("/img/shape.svg");
+  width: 12.34px;
+  height: 10px;
+  padding-left: 29.3px;
+  background-repeat: no-repeat;
+}
+
+#shape-2 {
+  background-image: url("/img/shape-2.svg");
+  width: 15.42px;
+  height: 10px;
+  background-repeat: no-repeat;
+}
+
+.btn-form {
+  position: absolute;
+  width: 215.1px;
+  height: 31px;
+  right: -1px;
+  top: -1px;
+}
+
+.btn-form button {
+  background: linear-gradient(180deg, #feb154 0%, #f1833e 100%);
+  border-radius: 0px 0px 4px 0px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  justify-content: end;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#form-message hr {
+  margin-top: 15px;
+  border: 1px solid #e7e7e7;
+}
+
+/* Tôpico enviado */
+#confirm-shipping {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.confirm-text p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #ed7839;
+  margin-top: 15px;
+}
+
+.thanks-text p {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #595959;
+  margin-top: 18px;
+}
+
+.discover-jobs p {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 137.5%;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #f48f44;
+  margin-top: 29px;
+}
+
+.new-topic {
+  width: 235.15px;
+  height: 32px;
+  margin: auto;
+  margin-top: 47px;
+}
+
+.new-topic button {
+  border: none;
+  width: 235.15px;
+  height: 32px;
+  background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.confirm-shipping-line {
+  border-bottom: 1px solid #e7e7e7;
+  margin-top: -16px;
+}
+
+/* Espera de feedback */
+.wait-author {
+  position: relative;
+  width: 100%;
+  height: 152px;
+  margin-top: 28px;
+  background: #ffffff;
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.post {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+#subject-question,
+#subject-question-model {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ed7839;
+  padding: 17px 24.17px 0px 24.17px;
+  margin-bottom: 0px;
+}
+
+#name,
+#name-model {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #5c5c5c;
+  margin-bottom: 0px;
+  padding-left: 24.17px;
+}
+
+#post-content,
+#post-content-model {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #4d4d4d;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-left: 24.17px;
+  padding-right: 24.14px;
+}
+
+.return,
+.return-model {
+  margin-top: 10px;
+  padding-bottom: 13px;
+  padding-left: 24.17px;
+}
+
+/* Filtro */
+.post-cover {
+  position: absolute;
+  display: block;
+  width: 100.2%;
+  height: 103%;
+  background: #f7f5f5b6;
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+  border-radius: 4px;
+  top: -1px;
+  left: -1px;
+  backdrop-filter: blur(2px);
+}
+
+.post-cover img {
+  width: 30.92px;
+  height: 23.22px;
+  margin-top: 35px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#wait-feedback {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #707070;
+  text-align: center;
+  margin-top: 7.78px;
+  margin-bottom: 0px;
+}
+
+#edit-topic {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #ed7839;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+
+/* Modelos de posts */
+.post-model,
+.post-model-comments {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  margin-bottom: 16px;
+  margin-top: 15px;
+  max-height: 775px;
+  padding-bottom: 18px;
+}
+
+/* Post com comentários */
+#hidden-comments {
+  width: 100.15%;
+  margin-left: -1px;
+  display: none;
+}
+.return-comments {
+  display: flex;
+  margin-top: 10px;
+  padding-bottom: 13px;
+  padding-left: 24.17px;
+  width: 100%;
+}
+
+.spots {
+  display: block;
+  margin-top: 1px;
+}
+.score {
+  width: 4px;
+  height: 4px;
+  background-image: url("/img/score.svg");
+  background-repeat: no-repeat;
+  padding-bottom: 7px;
+}
+
+.btn-enjoy {
+  width: 27.03px;
+  height: 19px;
+  position: relative;
+  margin-top: -4px;
+  margin-left: 15.01px;
+}
+
+.box-heart {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.heart {
+  position: absolute;
+  width: 14.01px;
+  height: 14px;
+  background-image: url("/img/heart.svg");
+  background-repeat: no-repeat;
+  top: 9.3px;
+  left: 9.5px;
+}
+
+.likes p {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #aaa5a5;
+  margin-left: 15.01px;
+  cursor: pointer;
+}
+
+.answers p {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #aaa5a5;
+  margin-left: 15.01px;
+  cursor: pointer;
+}
+
+.answers p:hover {
+  color: #aaa5a5;
+  text-decoration: underline;
+}
+
+.contribution {
+  background: #f8f8f8;
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+  border-radius: 0px;
+  padding: 18px 23.19px;
+  max-height: 300px;
+  border-radius: 0px 0px 3px 3px;
+}
+
+.contribution-empty {
+  padding: 18px 23.19px;
+
+  padding-right: 92px;
+}
+.comments-header {
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+}
+.comments-author {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #5c5c5c;
+}
+
+.who {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ed7839;
+}
+
+.the-end-header {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.positive {
+  width: 30.92px;
+  height: 23.22px;
+  background-image: url("/img/orang-right.svg");
+  background-repeat: no-repeat;
+  margin-left: 33.07px;
+}
+
+.comment-content {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #4d4d4d;
+  padding-right: 92px;
+}
+
+/* Footer */
+footer {
+  margin-left: 265px;
+}
+
+footer img {
+  width: 100%;
+}
