@@ -147,7 +147,7 @@
           <!-- Vídeo -->
           <div class="video-content">
             <div class="container-video">
-              <img src="./img/vídeo-overlay.png" alt="Video filter" />
+              <img src="img/vídeo overlay.png" alt="Video filter" />
               <h3>
                 Análise sensorial de preparações funcionais desenvolvidas para
                 escolares entre 09 e 15 anos, do município de Campinas/SP
@@ -212,7 +212,7 @@
                   <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
                 </div>
                 <div class="btn-box">
-                  <button type="button" onclick="createTopic()"><img src="./img/create-topic-icon.svg" alt="Botão de criar tópico"/> criar tópico</button>
+                  <button type="button" onclick="createTopic()"><span>+</span>  criar tópico</button>
                 </div>
               </div>
               <!-- Formulário -->
@@ -255,24 +255,100 @@
                     <p id="name">Carlos Henrique Santos</p>
                     <p id="post-content">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
                     <div class="return">
-                      <img src="./img/card-footer-post.svg" alt="Card footer post"/>
+                      <img src="img/button 1.png" alt="Card footer post"/>
                     </div>
                   </div>
                   <!-- Filtro -->
                   <div class="post-cover">
-                    <img src="./img/right.svg" alt="Right icon"/>
+                    <img src="img/right.svg" alt="Right icon"/>
                     <p id="wait-feedback">Aguardando feedback dos autores</p>
                     <p id="edit-topic">Editar tópico</p>
                   </div>
                 </div>
               </div>
               <!-- Modelos de posts -->
-              <div class="post-model">
+              
+              <div class="post-model-comments">
                 <p id="subject-question-model">Assunto da pergunta aparece aqui</p>
                 <p id="name-model">Carlos Henrique Santos</p>
                 <p id="post-content-model">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
-                <div class="return-model">
-                  <img src="./img/card-footer-post.svg" alt="Card footer post"/>
+                <!-- Post com comentários -->
+                <div class="return-comments">
+                  <div class="spots">
+                    <div class="score"></div>
+                    <div class="score"></div>
+                    <div class="score"></div>
+                  </div>
+                  <div class="btn-enjoy">
+                    <div class="box-heart"><img src="img/button 1.png" alt="Botão de curtida"/></div>
+                    <div class="heart"></div>
+                  </div>
+                  <div class="likes">
+                    <p>1 like</p>
+                  </div>
+                  <div class="answers">
+                    <p onclick="showComments()">1 resposta</p>
+                  </div>
+                </div>
+                <div id="hidden-comments">
+                  <div class="contribution">
+                    <div class="comments-header">
+                      <p class="comments-author">Adriano da Silva</p>
+                      <div class="the-end-header">
+                        <p class="who">Autor</p>
+                        <div class="positive"></div>
+                      </div>
+                    </div>
+                    <div class="comment-content">
+                      <p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                    </div>
+                  </div>
+
+                  <div class="contribution-empty">
+                    <div class="comments-header">
+                      <p class="comments-author">Carlos Henrique Santos</p>
+                      <div class="the-end-header">
+                        <p class="who"></p>
+                        <div></div>
+                      </div>
+                    </div>
+                    <div class="comment-content">
+                      <p>Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo.<br><br>Obrigada pela resposta, muito interessante o seu trabalho! </p>
+                    </div>
+                  </div>
+
+                  <div class="contribution">
+                    <div class="comments-header">
+                      <p class="comments-author">Camila Ferreira Andrade</p>
+                      <div class="the-end-header">
+                        <p class="who">Coautor</p>
+                        <div class="positive"></div>
+                      </div>
+                    </div>
+                    <div class="comment-content">
+                      <p>Também interessante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.<br><br> Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                    </div>
+                  </div>
+
+                  <div class="contribution">
+                    <div class="comments-header">
+                      <p class="comments-author">Ana Carolina</p>
+                      <div class="the-end-header">
+                        <p class="who">Coautor</p>
+                        <div class="positive"></div>
+                      </div>
+                    </div>
+                    <div class="comment-content">
+                      <p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                    </div>
+                  </div>
+
+
+
+
+
+
+
                 </div>
               </div>
               <div class="post-model-comments">
@@ -287,14 +363,14 @@
                     <div class="score"></div>
                   </div>
                   <div class="btn-enjoy">
-                    <div class="box-heart"><img src="./img/button-for-heart.svg" alt="Botão de curtida"/></div>
+                    <div class="box-heart"><img src="img/button 1.png" alt="Botão de curtida"/></div>
                     <div class="heart"></div>
                   </div>
                   <div class="likes">
-                    <p>4 likes</p>
+                    <p>1 like</p>
                   </div>
                   <div class="answers">
-                    <p onclick="showComments()">4 respostas</p>
+                    <p onclick="showComments()">1 resposta</p>
                   </div>
                 </div>
                 <div id="hidden-comments">
@@ -361,11 +437,11 @@
             </div>
           </div>
         </div>
+        <footer>
+          <img src="img/footer.png" alt="Galoá"/>    
+        </footer>
       </div>
     </div>
-    <footer>
-      <img src="./img/footer-imagem.svg" alt="Galoá"/>    
-    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>

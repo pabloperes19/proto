@@ -55,7 +55,7 @@ aside {
   height: 258px;
   margin-top: 540px;
   margin: 0px 0px;
-  background-image: url("../img/dewey_4.png");
+  background-image: url("../img/dewey-4.png");
 }
 
 #apresentaition-menu,
@@ -132,7 +132,7 @@ aside {
 .small-screen-menu-logo {
   width: 220px;
   height: 258px;
-  background-image: url("C:/Users/pc/Desktop/Pasta IMG/dewey-4.png");
+  background-image: url("../img/dewey-4.png");
 }
 
 /* Media query  */
@@ -275,7 +275,7 @@ header {
   background: #f5f5f5;
   box-sizing: border-box;
   border-radius: 50%;
-  background-image: url("C:/Users/pc/Desktop/Pasta IMG/women-image.png");
+  background-image: url("../img/women-image.png");
 }
 
 #notification-image {
@@ -363,7 +363,7 @@ header {
   position: relative;
   width: 783px;
   height: 439px;
-  background-image: url("C:/Users/pc/Desktop/Pasta IMG/dewey-1.png");
+  background-image: url("../img/dewey-1.png");
 }
 
 .container-video img {
@@ -417,7 +417,7 @@ header {
   height: 86px;
   left: 31px;
   bottom: 52px;
-  background-image: url("C:/Users/pc/Desktop/Pasta IMG/master-end-round.png");
+  background-image: url("../img/master-end-round.png");
 }
 
 #author {
@@ -674,6 +674,9 @@ header {
   justify-content: center;
   border-bottom: 1px solid #e7e7e7;
   margin-bottom: 28px;
+}
+.btn-box button span {
+  font-size: 15px;
 }
 
 .btn-box button {
